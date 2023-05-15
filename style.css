@@ -57,7 +57,7 @@ body{
 #sommairecss{
     color:black;
 }
-#difficultecss{
+#ameliorationcss{
     color:black;
 }
 #demonstrationcss{
@@ -87,13 +87,14 @@ nav{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    max-width: 40%;
+    max-width: 50%;
     margin: 16px;
     position: relative;
-    top: -75%;
-    left: 50%;
+    top: -70%;
+    left: 45%;
     font-family: Candara;
-       
+    font-size: 15px;
+    
        
 }
 
@@ -333,6 +334,10 @@ left: 55%;
     color: darkgreen;
     text-decoration: underline;
 }
+#ameliorationcss:hover{
+    color: darkgreen;
+    text-decoration: underline;
+}   
 
 #barre4 {
   height: 5px;
@@ -482,4 +487,39 @@ pre{
     bottom: 40%;
     left: 15%;
     font-family: Candara;
+}
+#barre6 {
+  height: 5px;
+  width: 88%;
+  background-color: #31a91b;
+  position: relative;
+    top: -25%;
+    left: 6%;
+    opacity: 20%;
+}
+#int6{
+    height: 35px;
+    width: 100%;
+    font-family: Candara;
+ margin-top: 0%;
+    margin-bottom:0%;
+    position: relative;
+    top:-15%;
+    left: 40%;
+}
+.box7{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  padding: 20px; 
+  width: 800px;
+  height: 300px;
+    position: relative;
+    bottom: 10%;
+    left: 15%;
+    font-family: Candara;
+}
+#gif{
+left: 30%;
+top: -60%;
 }
