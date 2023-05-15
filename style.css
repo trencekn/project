@@ -1,0 +1,485 @@
+.logo h1
+{
+ text-transform: uppercase;
+ font-family: Arial, Helvetica,sans-serif;
+    font-size: 52px;
+    position: relative;
+    left: 135%;
+    top: -70%
+    }
+h1:nth-child(2) {
+  margin-top: -95px;
+  color: green;
+  animation: anm 3s ease-in-out infinite;
+}
+
+@keyframes anm {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 0%,
+      14% 0,
+      27% 14%,
+      40% 26%,
+      53% 38%,
+      67% 48%,
+      80% 51%,
+      100% 49%,
+      100% 99%,
+      0% 99%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0 59%,
+      14% 54%,
+      30% 53%,
+      45% 56%,
+      57% 46%,
+      66% 31%,
+      78% 17%,
+      100% 0,
+      100% 99%,
+      0% 99%
+    );
+  }
+}
+
+body{
+    background-image: linear-gradient(20deg, #f3ffff 0, #ecffff 16.67%, #e1eeec 33.33%, #d2d2d2 50%, #c1b7bb 66.67%, #b4a3ab 83.33%, #aa96a2 100%);
+    color: black;
+    
+}
+
+#presentationcss{
+    color:black;
+}
+#sommairecss{
+    color:black;
+}
+#difficultecss{
+    color:black;
+}
+#demonstrationcss{
+    color:black;
+}
+
+
+
+img{
+    height: 40%;
+    width: 30%;
+    position: relative;
+    top: -280px;
+}
+
+
+.navig{
+    height: 100vh;
+    width:100%;
+    position: relative;
+    top: 10%;
+    
+    
+}
+
+nav{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    max-width: 40%;
+    margin: 16px;
+    position: relative;
+    top: -75%;
+    left: 50%;
+    font-family: Candara;
+       
+       
+}
+
+
+div{
+  width: 200px;
+  height: 100px;
+}
+
+somm{
+    position: relative;
+    top: -50%;
+    font-family: Candara;
+    left:2%;
+    color:black;
+    
+}
+#separator {
+  height: 5px;
+  width: 88%;
+  background-color: green;
+  animation: snake 3s linear infinite;
+    position: relative;
+    top: -55%;
+}
+@keyframes snake {
+  0% {
+    transform: translateX(1%);
+  }
+  25% {
+    transform: translateX(10%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(7%);
+  }
+  100% {
+    transform: translateX(3%);
+  }
+}
+#barre1 {
+  height: 5px;
+  width: 88%;
+  background-color: #31a91b;
+  position: relative;
+    top: -40%;
+    left: 6%;
+    opacity: 40%;
+}
+
+#int{
+    height: 35px;
+    width: 10%;
+    font-family: Candara;
+ margin-top: -15%;
+}
+
+#intrasec{
+    margin: 4%;
+    font-family: Candara;
+    font-size: 18px;
+}
+
+#txt1{
+    font-family: Candara;
+    font-size: 18px;
+    margin-left: 5%;
+    position: relative;
+    top: -60px; 
+    
+}
+#barre2 {
+  height: 5px;
+  width: 88%;
+  background-color: #31a91b;
+  position: relative;
+    top: -8%;
+    left: 6%;
+    opacity: 35%;
+}
+
+
+#int1{
+    height: 35px;
+    width: 30%;
+    font-family: Candara;
+ margin-top: 3%;
+}
+
+#juliette-photo {
+  display: block;
+  margin-left: 2%;;
+  margin-right: 0;
+position: relative;
+    top: 3%;
+
+}
+#text-block {
+  position: relative;
+  left: 55%; 
+bottom: 19%;
+    text-align: center;
+    font-family: Candara;
+}
+#text-block2 {
+  position: relative;
+  left: 11%; 
+bottom: -5%;
+    text-align: center;
+    font-family: Candara;
+}
+#tom-photo {
+  display: block;
+position: relative;
+    top: -30%;
+    left: 52%;
+
+}
+#text-block3 {
+  position: relative;
+  left: 55%; 
+bottom: 3%;
+    text-align: center;
+    font-family: Candara;
+}
+
+
+#martin-photo {
+  display: block;
+  margin-left: 2%;;
+  margin-right: 0;
+position: relative;
+    top: -35%;
+
+}
+#text-block4 {
+  position: relative;
+  left: 11%; 
+bottom: 11%;
+    text-align: center;
+    font-family: Candara;
+}
+#romain-photo {
+  display: block;
+position: relative;
+    top: -45%;
+    left: 52%;
+
+}
+#terence-photo {
+  display: block;
+  margin-left: 2%;;
+  margin-right: 0;
+position: relative;
+    top: -35%;
+
+}
+#text-block5 {
+  position: relative;
+  left: 55%; 
+bottom: 57%;
+    text-align: center;
+    font-family: Candara;
+}
+#barre3 {
+  height: 5px;
+  width: 88%;
+  background-color: #31a91b;
+  position: relative;
+    top: -38%;
+    left: 6%;
+    opacity: 20%;
+}
+
+#text-block:hover, #text-block2:hover,#text-block3:hover,#text-block4:hover,#text-block5:hover{
+     font-size: 102%;
+  font-weight: bold;
+}
+#int2{
+    height: 35px;
+    width: 12%;
+    font-family: Candara;
+ margin-top: 0%;
+    margin-bottom:0%;
+    position: relative;
+    top:-20%;
+    left: 45%;
+}
+#intrasec2{
+    margin: 3%;
+    font-family: Candara;
+    font-size: 18px;
+    position: relative;
+    top: -26%; 
+}
+#photo_3D{
+  display: block;
+  margin-left: 5%;
+top: -23%;
+}
+#photo_3D:hover{
+    transform: scale(1.02);
+}
+#photo_3D2{
+  display: block;
+  margin-left: 2%;
+top: -63%;
+left: 55%;
+}
+#photo_3D2:hover{
+    transform: scale(1.02);
+}
+
+#blender:hover{
+    color: darkgreen;
+    text-decoration: underline;
+       
+}
+#sommairecss:hover{
+    color: darkgreen;
+    text-decoration: underline;
+    
+}
+#presentationcss:hover{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+#difficultecss:hover{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+#demonstrationcss:hover{
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+#barre4 {
+  height: 5px;
+  width: 88%;
+  background-color: #31a91b;
+  position: relative;
+    top: -50%;
+    left: 6%;
+    opacity: 20%;
+}
+#int3{
+    height: 35px;
+    width: 100%;
+    font-family: Candara;
+ margin-top: 0%;
+    margin-bottom:0%;
+    position: relative;
+    top:-43%;
+    left: 42%;
+}
+#html1{
+    position: relative;
+    left: 2%;
+    top: -25%;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  padding: 20px; 
+  width: 700px;
+  height: 300px;
+    position: relative;
+    bottom: 75%;
+    left: 39%;
+}
+
+.text {
+  font-size: 18px; 
+  line-height: 1.5; 
+    font-family: Candara;
+    
+}
+#txt2{
+    font-size: 18px;
+    justify-content: center;
+    font-family: Candara;
+}
+
+#html2{
+    position: relative;
+    width: 50%;
+    height: 25%;
+    left: 47%;
+    font-family: Candara
+
+}
+.box2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  padding: 20px; 
+  width: 500px;
+  height: 350px;
+    position: relative;
+    bottom: 85%;
+    
+}
+.text2{
+  font-size: 16px; 
+  line-height: 1.5; 
+    font-family: Candara;
+    
+}
+
+   
+#barre5 {
+  height: 5px;
+  width: 88%;
+  background-color: #31a91b;
+  position: relative;
+    top: -65%;
+    left: 6%;
+    opacity: 20%;
+}
+#int4{
+    height: 35px;
+    width: 100%;
+    font-family: Candara;
+ margin-top: 0%;
+    margin-bottom:0%;
+    position: relative;
+    top:-55%;
+    left: 42%;
+}
+#photoarduino{
+    position: relative;
+    width: 40%;
+    height: 60%;
+    left: 3%;
+    top:-200px;  
+}
+.box3 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  padding: 20px; 
+  width: 300px;
+  height: 200px;
+    position: relative;
+    bottom: 90%;
+    left: 50%;
+    
+}
+.text3{
+  font-size: 15px; 
+  line-height: 1,2; 
+    font-family: Candara;
+    align-content: center;
+    
+}
+#int5{
+    height: 35px;
+    width: 100%;
+    font-family: Candara;
+ margin-top: 0%;
+    margin-bottom:0%;
+    position: relative;
+    top:-55%;
+    left: 43%;
+}
+pre{
+    position: relative;
+    bottom: 300px;
+    right: 100px;
+}
+
+.box4 {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  padding: 20px; 
+  width: 900px;
+  height: 835px;
+    position: relative;
+    bottom: 40%;
+    left: 15%;
+    font-family: Candara;
+}
