@@ -482,11 +482,15 @@ pre{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
   padding: 20px; 
   width: 900px;
-  height: 835px;
+  height: 930px;
     position: relative;
-    bottom: 40%;
+    bottom: 43%;
     left: 15%;
     font-family: Candara;
+ 
+}
+.text4{
+  font-size: 14px; 
 }
 #barre6 {
   height: 5px;

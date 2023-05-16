@@ -139,49 +139,52 @@ Liste du matériels : <br>
 <div class="box4">
     
     <p class="text4">
-#include LiquidCrystal.h // on importe la librairie LiquideCrystal <br>
+#include <LiquidCrystal.h> // on importe la librairie LiquideCrystal <br>
 LiquidCrystal lcd(12,11,5,4,3,2) ; // On crée notre écran avec ses pwm branchés (rs, enable, d4, d5, d6, d7) <br>
 <br>
 int Pin_Capteur_Humidite = A0; // Le capteur d'humidité est branché à la pin Analog 0 dans le arduino <br>
 int Valeur_Humidite; // la valeur lu par le capteur <br>
 int Pourcentage_Humidite; // la valeur en pourcentage de l'humidité <br>
 int sec = 817; // la valeur maximum qu'on obtient du capteur attention la valeur peut varier <br>
-int humide = 407; // la valeur minimal qu'on obtient du capteur attention la valeur peut varier <br>
+int humide = 407; // la valeur minimal qu'on obtient du capteur attention la valeur peut varier<br>
 <br>
-#include "DHT.h" <br>
+#include "DHT.h"<br>
 #define DHTPIN 7 // defini la broche sur laquelle est rataché la broche data du capteur de température <br>
 #define DHTTYPE DHT11 // definit le type de capteur utilisé <br>
 DHT dht(DHTPIN, DHTTYPE); <br>
 <br>
-void setup() { <br>
-  Serial.begin(9600); // on démarre le serial monitor <br>
+void setup() {<br>
+  Serial.begin(9600); // on démarre le serial monitor<br>
 <br>
-  lcd.begin(16,2); // on initialise l'ecran lcd  <br>
+  lcd.begin(16,2); // on initialise l'ecran lcd <br>
 <br>
-  dht.begin(); // on initialise le capteur DHT11 <br>
+  dht.begin(); // on initialise le capteur DHT11<br>
 <br>
-} <br>
+}<br>
+void loop() {<br>
+  Valeur_Humidite = analogRead(Pin_Capteur_Humidite);   // variable égale à la valeur perçu par le capteur d'humidité <br>
 <br>
-void loop() { <br>
-  Valeur_Humidite = analogRead(Pin_Capteur_Humidite);   // variable égale à la valeur perçu par le capteur d'humidité  <br>
+  Pourcentage_Humidite=map(Valeur_Humidite,sec,humide,0,100);<br>
 <br>
-  Pourcentage_Humidite=map(Valeur_Humidite,sec,humide,0,100); <br>
-<br>
-  lcd.setCursor(0,0);         // première ligne du l'écran <br>
-  lcd.print("Serre_Auto");  //affiche sur l'écran "serre_auto" <br>
+  lcd.setCursor(0,0);         // première ligne du l'écran<br>
+  lcd.print("Serre_Auto");  //affiche sur l'écran "serre_auto"<br>
   lcd.setCursor(0,1);     // deuxième ligne de l'écran <br>
   lcd.print("humidite =");  //affiche sur l'écran "humidité =" <br>
-  lcd.print(Pourcentage_Humidite);  // affiche la valeur de l'humidité en pourcentage <br>
-  lcd.print("%");     // affiche %  <br>
+  lcd.print(Pourcentage_Humidite);  // affiche la valeur de l'humidité en pourcentage<br>
+  lcd.print("%");     // affiche %<br>
+
+<br>
+  if(Pourcentage_Humidite < 60)  // Si la valeur dhumidité est inférieure à 60%<br>
+    lcd.setCursor(0, 0);   // on se positionne sur la première ligne de lécran<br>
+    lcd.print("Arrose moi");   // on affiche "Arrose moi" sur l'écran<br>
+  <br>
   delay(100);   // attend 0,1 seconde avant de reboucler <br>
   lcd.clear();<br>
 <br>
   Serial.print(Pourcentage_Humidite);     // affiche sur le serial monituer la valeur de l'humidité <br>
-  Serial.println("%");      // affiche le symbole % <br>
-  Serial.println("Temperature = " + String(dht.readTemperature())+" °C");     // affiche sur le serial moniteur la valeur de la température lu par le DHT11 <br>
-<br>
-}
-        
+  Serial.println("%");      // affiche le symbole %<br>
+  Serial.println("Temperature = " + String(dht.readTemperature())+" °C");     // affiche sur le serial moniteur la valeur de la température lu par le DHT11<br>
+  }<br>
         </p> 
 </div>        
 
